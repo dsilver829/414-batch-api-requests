@@ -48,7 +48,7 @@ class ToDoList
     @offline = true
     $('#incomplete_tasks').find('input[type=checkbox]').click()
     @offline = false
-    sync()
+    @sync()
 
   save: (task) ->
     @requests.push
